@@ -755,6 +755,11 @@ video {
   background-color: rgb(14 165 233 / 0.8);
 }
 
+.bg-slate-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
