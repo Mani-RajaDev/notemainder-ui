@@ -6,7 +6,7 @@
   <title>NoteMinder</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white">
+<body class="bg-white antialiased">
   <div class="w-11/12 sm:w-10/12 mx-auto max-w-7xl">
     <header class="font-primary">
       <div class="flex items-center py-4 border-b border-slate-900/10 relative">
@@ -30,13 +30,13 @@
           </button>
           <nav class="hidden absolute z-50 top-full right-0 bg-white rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-40 py-1 mt-2 sm:ml-auto sm:block sm:static sm:rounded-none sm:ring-0 sm:shadow-none sm:w-auto sm:py-0 sm:mt-0" id="navbar">
           <ul class="p-4 sm:p-0">
-            <li class="inline-flex items-center mb-4 hover:text-sky-500 sm:pr-8 sm:mb-0">
+            <li class="inline-flex items-center mb-4 cursor-pointer hover:text-sky-500 sm:pr-8 sm:mb-0">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"></path>
               </svg>
               <a href="#">Login</a>
             </li>
-            <li class="inline-flex items-center hover:text-sky-500 sm:pr-8 sm:mb-0">
+            <li class="inline-flex items-center cursor-pointer hover:text-sky-500 sm:pr-8 sm:mb-0">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"></path></svg>
               <a class="hover:text-sky-500" href="#">Register</a>
             </li>
@@ -64,8 +64,34 @@
         </div>
       </div>
     </header>
-    <main>
-
+    <main class="min-h-[calc(100dvh-64.8px)] flex justify-center">
+      <!-- Search section -->
+      <!-- <div>
+        <form action="#" method="get">
+          <div class="w-full flex items-center mx-auto max-w-md text-slate-700/80 rounded-md ring-1 ring-slate-900/10 shadow-sm py-1.5 px-2 mt-10 font-secondary">
+            <svg width="24" height="24" fill="none" aria-hidden="true"><path d="m19 19-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+            <input class="w-full text-sm border-none outline-none mx-2 text-slate-800 bg-none bg-transparent shadow-none" type="text" placeholder="Quick search...">
+          </div>
+        </form>
+      </div> -->
+      
+      <div class="mt-40 text-center">
+        <div class="font-secondary text-slate-700">
+          <p class="tracking-wider text-sm sm:text-base">Welcome to NoteMinder</p>
+          <div class="mt-4">
+             <h2 class="text-3xl sm:text-5xl lg:text-6xl font-primary text-sky-500 font-semibold">Write, Organize, Thrive.</h2>
+             <p class="mt-5 sm:mt-7 text-base sm:text-lg max-w-[744px]">Whether you're a student, professional, or creative mind, Noteminder is here to keep your ideas organized in one place</p>
+          </div>
+        </div>
+        <div class="mt-8">
+          <button class="rounded-lg py-2.5 px-[18px] border border-gray-300 mr-4">
+            <a class="font-primary text-slate-700 text-base leading-6 tracking-wider" href="#">Login</a>
+          </button>
+          <button class="rounded-lg py-2.5 px-[18px] bg-violet-500/90">
+            <a class="font-primary text-white  text-base leading-6 tracking-wider" href="#">Signup</a>
+          </button>
+        </div>
+      </div>
     </main>
   </div>
 </body>
