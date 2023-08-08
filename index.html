@@ -20,22 +20,29 @@
           <h1 class="text-slate-900 text-xl pl-1 sm:text-2xl sm:ml-2">noteminder</h1>
         </div>
         
-        <!-- Navbar toggler (mobile) -->
-        <div class="text-slate-800 pr-2 ml-auto sm:hidden sm:pr-4">
-          <button class="flex items-center" id="navbar__toggler">
+        <!-- Navbar section -->
+        <div class="text-slate-800 pr-2 ml-auto  sm:pr-4">
+          <!-- Navbar toggler -->
+          <button class="flex items-center sm:hidden" id="navbar__toggler">
               <span>
                 <svg width="24" height="24"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
               </span>
           </button>
-        </div>
-
-        <!-- Navbar -->
-        <nav class="hidden absolute z-50 top-full right-0 bg-white rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-40 py-1 mt-2 sm:ml-auto sm:block sm:static sm:rounded-none sm:ring-0 sm:shadow-none sm:w-auto sm:py-0 sm:mt-0" id="navbar">
-          <ul class="p-6 sm:p-0">
-            <li class="mb-4 sm:inline-block sm:pr-8 sm:mb-0"><a class="hover:text-sky-500" href="#">Login</a></li>
-            <li class="sm:inline-block sm:pr-8 sm:mb-0"><a class="hover:text-sky-500" href="#">Register</a></li>
+          <nav class="hidden absolute z-50 top-full right-0 bg-white rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-40 py-1 mt-2 sm:ml-auto sm:block sm:static sm:rounded-none sm:ring-0 sm:shadow-none sm:w-auto sm:py-0 sm:mt-0" id="navbar">
+          <ul class="p-4 sm:p-0">
+            <li class="inline-flex items-center mb-4 hover:text-sky-500 sm:pr-8 sm:mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"></path>
+              </svg>
+              <a href="#">Login</a>
+            </li>
+            <li class="inline-flex items-center hover:text-sky-500 sm:pr-8 sm:mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"></path></svg>
+              <a class="hover:text-sky-500" href="#">Register</a>
+            </li>
           </ul>
-        </nav>
+          </nav>
+        </div>
 
         <!-- Theme section -->
         <div class="border-l border-slate-200 pl-3 relative sm:pl-6">
@@ -43,9 +50,6 @@
           <button class="flex items-center" id="theme__toggler">
             <span>
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="fill-sky-500/20 stroke-sky-500" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path class="stroke-sky-500" d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"></path></svg>
-            </span>
-            <span class="text-slate-800/50 rotate-90">
-              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"></path></svg>
             </span>
           </button>
           <!-- Themes list -->
@@ -60,6 +64,9 @@
         </div>
       </div>
     </header>
+    <main>
+
+    </main>
   </div>
 </body>
 <script src="js/script.js"></script>
