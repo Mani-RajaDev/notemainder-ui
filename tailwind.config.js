@@ -10,6 +10,9 @@ module.exports = {
       animation: {
         "typing": "typing 3.5s steps(40, end), blink-caret .75s step-end infinite"
       },
+      colors: {
+        "checkbox": "var(--form-control-color)"
+      },
       keyframes: {
         typing: {
           "0%": {width: "0px"},

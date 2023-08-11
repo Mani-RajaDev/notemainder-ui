@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NoteMinder</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body class="bg-white antialiased">
   <div class="w-11/12 sm:w-10/12 mx-auto max-w-7xl">
@@ -109,20 +110,22 @@
                 <input class="pb-2.5 pr-3.5  outline-none bg-none bg-transparent font-primary text-2xl placeholder:text-2xl placeholder:text-slate-700 w-full" type="text" placeholder="Title">
               </div>
               <div class="mb-5 border-b border-slate-900/10">
-                <textarea rows="10" placeholder="Take a note..." class="pb-2.5 pr-3.5 w-full resize-none outline-none bg-none bg-transparent font-primary text-base placeholder:font-primary placeholder:text-base placeholder:text-slate-700">
+                <textarea cols="20" rows="10" name="note_content" required placeholder="Take a note..." class="pb-2.5 pr-3.5 w-full resize-none outline-none bg-none bg-transparent font-primary text-base placeholder:font-primary placeholder:text-base placeholder:text-slate-700">
                 </textarea>
               </div>
               <!-- Filters -->
               <div class="mb-10 flex flex-wrap justify-between gap-x-8 gap-y-3  items-center text-slate-700/90">
                 <!-- Complete button -->
-                <div class="flex items-center gap-1">
-                  <input type="checkbox" id="completed">
-                  <label for="completed">Mark as completed</label>
+                <div>
+                   <label class="form-control flex items-center gap-x-2">
+                    <input type="checkbox" name="is-completed" value="completed" class="flex items-center justify-center appearance-none bg-transparent m-0 text-current w-4 h-4 border-2 border-slate-700/80 relative rounded-sm before:content-[''] before:block before:w-full before:h-full before:bg-checkbox before:scale-0 transition-transform duration-100 ease-in-out checked:before:scale-75"/>
+                    <span class="text-sm">Mark as completed</span>
+                  </label>
                 </div>
                 <!-- Filter buttons -->
                 <div class="flex">
-                  <button class="flex items-center lg:hover:after:block lg:relative lg:after:content-['Important'] lg:after:hidden lg:after:absolute lg:after:-left-[23px] lg:after:-bottom-6 lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold">
-                  <svg class="w-5 h-5" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <button class="flex items-center lg:hover:after:block lg:relative lg:after:content-['Important'] lg:after:hidden  lg:after:absolute lg:after:-left-[23px] lg:after:-bottom-6 lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold">
+                  <svg class="w-3 h-3 lg:w-5 lg:h-5" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   </defs>
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="Dribbble-Light-Preview" transform="translate(-139.000000, -520.000000)" fill="#000000">
@@ -134,20 +137,20 @@
                           </g>
                       </g>
                   </svg>
-                  <span class="ml-2 lg:hidden">Important</span>
+                  <span class="ml-2 text-xs lg:hidden">Important</span>
                 </button>
                 <button class="flex items-center mx-2 lg:relative lg:hover:after:block lg:after:content-['Archive'] lg:after:hidden lg:after:absolute lg:after:-bottom-6 lg:after:-left-[17px] lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z"/>
                   </svg>
-                  <span class="ml-2 lg:hidden">Archive</span>
+                  <span class="ml-2 text-xs lg:hidden">Archive</span>
                 </button>
                 </div>
               </div>
               <!-- CTA buttons -->
-              <div>
-                <a href="" class="inline-block rounded-lg py-2.5 px-[18px] border-[1.5px] border-slate-300 mr-4 hover:border-[1.5px] hover:border-sky-500/80 text-slate-700 text-base leading-6 tracking-wider">Cancel</a>
-                <button class="inline-block rounded-lg min-w-[94px] py-2.5 px-[18px] bg-sky-500 shadow-md hover:shadow-sky-300 text-white  text-base leading-6 tracking-wider">Save</button>
+              <div class="flex flex-wrap gap-y-5">
+                <a href="" class="rounded-lg py-2.5 px-[18px] border-[1.5px] border-slate-300 mr-4 hover:border-[1.5px] hover:border-sky-500/80 text-slate-700 text-base leading-6 tracking-wider">Cancel</a>
+                <button class="rounded-lg min-w-[94px] py-2.5 px-[18px] bg-sky-500 shadow-md hover:shadow-sky-300 text-white  text-base leading-6 tracking-wider">Save</button>
               </div>
             </form>
           </di
