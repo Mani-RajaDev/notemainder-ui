@@ -12,6 +12,7 @@ themeToggler.addEventListener('click', () => {
 
 // Menu toggler
 navBarToggler.addEventListener('click', () => {
-    if(!themeMenu.classList.contains('hidden')) themeMenu.classList.add('hidden');
+    if (!themeMenu.classList.contains('hidden')) themeMenu.classList.add('hidden');
     navBar.classList.toggle('hidden');
 });
+
