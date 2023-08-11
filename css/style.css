@@ -701,8 +701,8 @@ video {
   height: 1.5rem;
 }
 
-.h-\[100dvh\]{
-  height: 100dvh;
+.h-full{
+  height: 100%;
 }
 
 .min-h-\[calc\(100dvh-64\.8px\)\]{
