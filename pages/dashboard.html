@@ -109,13 +109,17 @@
       <!-- Create note form -->
       <div class="text-slate-700 hidden fixed top-0 left-0 z-20 overflow-auto w-[100vw] h-full bg-black/30 backdrop-blur-sm" id="note__form">
 				<div class="bg-white mt-[10vh] shadow-lg w-11/12 max-w-3xl mx-auto rounded-lg py-4 px-6">
-          <!-- Back button -->
-          <div class="mb-8">
+          <!-- Back & Edit buttons -->
+          <div class="mb-8 flex justify-between items-center">
 					<button class="flex items-center font-secondary text-base outline-none py-1.5 px-3.5 bg-sky-500/80 text-white rounded-md">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 stroke-2 mr-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
 							<span>Back</span>
+					</button>
+					<button class="flex items-center font-secondary text-base outline-none py-1.5 px-3.5 bg-green-500/80 text-white rounded-md">
+							<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="64px" height="64px" stroke="currentColor" class="w-5 h-5 stroke-2 mr-1.5"><path fill="currentColor" d="M 79.335938 15.667969 C 78.064453 15.622266 76.775 15.762109 75.5 16.099609 C 72.1 16.999609 69.299609 19.199219 67.599609 22.199219 L 64 28.699219 C 63.2 30.099219 63.699609 32.000781 65.099609 32.800781 L 82.400391 42.800781 C 82.900391 43.100781 83.400391 43.199219 83.900391 43.199219 C 84.200391 43.199219 84.399219 43.199609 84.699219 43.099609 C 85.499219 42.899609 86.1 42.399219 86.5 41.699219 L 90.199219 35.199219 C 91.899219 32.199219 92.4 28.700781 91.5 25.300781 C 90.6 21.900781 88.400391 19.100391 85.400391 17.400391 C 83.525391 16.337891 81.455078 15.744141 79.335938 15.667969 z M 60.097656 38.126953 C 59.128906 38.201172 58.199219 38.724609 57.699219 39.599609 L 27.5 92 C 24.1 97.8 22.200781 104.30039 21.800781 110.90039 L 21 123.80078 C 20.9 124.90078 21.5 125.99961 22.5 126.59961 C 23 126.89961 23.5 127 24 127 C 24.6 127 25.199219 126.8 25.699219 126.5 L 36.5 119.40039 C 42 115.70039 46.7 110.8 50 105 L 80.300781 52.599609 C 81.100781 51.199609 80.599219 49.3 79.199219 48.5 C 77.799219 47.7 75.899609 48.199609 75.099609 49.599609 L 44.800781 102 C 41.900781 106.9 37.899609 111.20039 33.099609 114.40039 L 27.300781 118.19922 L 27.699219 111.30078 C 27.999219 105.60078 29.699609 100 32.599609 95 L 62.900391 42.599609 C 63.700391 41.199609 63.200781 39.3 61.800781 38.5 C 61.275781 38.2 60.678906 38.082422 60.097656 38.126953 z M 49 121 C 47.3 121 46 122.3 46 124 C 46 125.7 47.3 127 49 127 L 89 127 C 90.7 127 92 125.7 92 124 C 92 122.3 90.7 121 89 121 L 49 121 z M 104 121 A 3 3 0 0 0 101 124 A 3 3 0 0 0 104 127 A 3 3 0 0 0 107 124 A 3 3 0 0 0 104 121 z"/></svg>
+							<span>Edit</span>
 					</button>
 				  </div>
           <!-- Note form -->
@@ -139,13 +143,13 @@
                 </div>
                 <!-- Filter buttons -->
                 <div class="flex">
-                  <button class="flex items-center lg:hover:after:block lg:relative lg:after:content-['Important'] lg:after:hidden  lg:after:absolute lg:after:-left-[23px] lg:after:-bottom-6 lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold">
+                  <button class="flex items-center lg:hover:after:block lg:relative lg:after:content-['Important'] lg:after:hidden  lg:after:absolute lg:after:-left-[23px] lg:after:-bottom-6 lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold group">
                   <svg class="w-4 h-4 lg:w-5 lg:h-5" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   </defs>
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="Dribbble-Light-Preview" transform="translate(-139.000000, -520.000000)" fill="#000000">
                               <g id="icons" transform="translate(56.000000, 160.000000)">
-                                  <path fill="currentColor" d="M94.55,365.007 L94.55,372.007 C94.55,372.559 94.0796,373.007 93.5,373.007 C92.9204,373.007 92.45,372.559 92.45,372.007 L92.45,365.007 C92.45,364.455 92.9204,364.007 93.5,364.007 C94.0796,364.007 94.55,364.455 94.55,365.007 L94.55,365.007 Z M94.55,375.007 C94.55,375.559 94.0796,376.007 93.5,376.007 C92.9204,376.007 92.45,375.559 92.45,375.007 C92.45,374.455 92.9204,374.007 93.5,374.007 C94.0796,374.007 94.55,374.455 94.55,375.007 L94.55,375.007 Z M101.9,377 C101.9,377.552 101.4296,378 100.85,378 L86.15,378 C85.5704,378 85.1,377.552 85.1,377 L85.1,363 C85.1,362.448 85.5704,362 86.15,362 L100.85,362 C101.4296,362 101.9,362.448 101.9,363 L101.9,377 Z M101.9,360 L85.1,360 C83.93975,360 83,360.899 83,362.003 L83,362.007 L83,378.007 C83,379.112 83.93975,380 85.1,380 L101.9,380 C103.06025,380 104,379.108 104,378.003 L104,362.007 C104,360.902 102.95,360 101.9,360 L101.9,360 Z" id="important_message-[#1448]">
+                                  <path class="group-hover:fill-red-500"  fill="currentColor" d="M94.55,365.007 L94.55,372.007 C94.55,372.559 94.0796,373.007 93.5,373.007 C92.9204,373.007 92.45,372.559 92.45,372.007 L92.45,365.007 C92.45,364.455 92.9204,364.007 93.5,364.007 C94.0796,364.007 94.55,364.455 94.55,365.007 L94.55,365.007 Z M94.55,375.007 C94.55,375.559 94.0796,376.007 93.5,376.007 C92.9204,376.007 92.45,375.559 92.45,375.007 C92.45,374.455 92.9204,374.007 93.5,374.007 C94.0796,374.007 94.55,374.455 94.55,375.007 L94.55,375.007 Z M101.9,377 C101.9,377.552 101.4296,378 100.85,378 L86.15,378 C85.5704,378 85.1,377.552 85.1,377 L85.1,363 C85.1,362.448 85.5704,362 86.15,362 L100.85,362 C101.4296,362 101.9,362.448 101.9,363 L101.9,377 Z M101.9,360 L85.1,360 C83.93975,360 83,360.899 83,362.003 L83,362.007 L83,378.007 C83,379.112 83.93975,380 85.1,380 L101.9,380 C103.06025,380 104,379.108 104,378.003 L104,362.007 C104,360.902 102.95,360 101.9,360 L101.9,360 Z" id="important_message-[#1448]">
 
                   </path>
                               </g>
@@ -154,8 +158,8 @@
                   </svg>
                   <span class="ml-2 text-sm lg:hidden">Important</span>
                 </button>
-                <button class="flex items-center mx-2 lg:relative lg:hover:after:block lg:after:content-['Archive'] lg:after:hidden lg:after:absolute lg:after:-bottom-6 lg:after:-left-[17px] lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="currentColor">
+                <button class="flex items-center mx-2 lg:relative lg:hover:after:block lg:after:content-['Archive'] lg:after:hidden lg:after:absolute lg:after:-bottom-6 lg:after:-left-[17px] lg:after:py-0.5 lg:after:px-1.5 lg:after:bg-sky-500/80 lg:after:text-white lg:after:text-xs lg:after:rounded-sm lg:after:font-semibold group">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:fill-sky-500 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z"/>
                   </svg>
                   <span class="ml-2 text-sm lg:hidden">Archive</span>
