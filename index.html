@@ -6,7 +6,7 @@
   <title>NoteMinder</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white antialiased">
+<body class="bg-white antialiased ">
   <div class="w-11/12 sm:w-10/12 mx-auto max-w-7xl">
     <header class="font-primary">
       <div class="flex items-center py-4 border-b border-slate-900/10 relative">
@@ -28,15 +28,15 @@
           </button>
           <nav class="hidden absolute z-50 top-full right-0 bg-white rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-40 py-1 mt-2 sm:ml-auto sm:block sm:static sm:rounded-none sm:ring-0 sm:shadow-none sm:w-auto sm:py-0 sm:mt-0" id="navbar">
           <ul class="p-4 sm:flex items-center sm:p-0">
-            <li class="inline-flex items-center mb-4 cursor-pointer hover:text-sky-500 sm:pr-8 sm:mb-0">
-              <a class="flex items-center" href="pages/login.html">
+            <li class="inline-flex items-center mb-4 cursor-pointer sm:pr-8 sm:mb-0">
+              <a href="pages/login.html" class="flex items-center hover:text-sky-500 visited:text-slate-700 focus:text-sky-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 inline-block">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"></path>
                 </svg>Login
               </a>
             </li>
-            <li class="inline-flex items-center cursor-pointer hover:text-sky-500 sm:pr-8 sm:mb-0">
-              <a class="sm:flex items-center" href="pages/signup.html">
+            <li class="inline-flex items-center cursor-pointer sm:pr-8 sm:mb-0">
+              <a href="pages/signup.html" class="sm:flex items-center hover:text-sky-500 visited:text-slate-700 focus:text-sky-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-0.5 sm:mr-2 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"></path></svg>
                 Register
               </a>
@@ -45,23 +45,23 @@
           </nav>
         </div>
         <!-- Theme section -->
-        <div class="border-l border-slate-200 pl-3 relative sm:pl-6">
-          <!-- Theme toggler -->
+        <!-- <div class="border-l border-slate-200 pl-3 relative sm:pl-6">
+          Theme toggler
           <button class="flex items-center" id="theme__toggler">
             <span>
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="fill-sky-500/20 stroke-sky-500" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path class="stroke-sky-500" d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"></path></svg>
             </span>
           </button>
-          <!-- Themes list -->
-          <ul class="hidden absolute z-50 top-full right-0 bg-white rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-36 py-1 mt-8" id="theme__menu">
-            <li class="flex items-center py-1 px-2 cursor-pointer text-sky-500 hover:bg-slate-50">
+          Themes list
+          <ul class="hidden absolute z-50 top-full right-0 bg-white dark:bg-slate-800 rounded-lg ring-1 ring-slate-900/10 shadow-lg overflow-hidden w-36 py-1 mt-8" id="theme__menu">
+            <li class="flex items-center py-1 px-2 cursor-pointer text-sky-500 hover:bg-slate-50 dark:hover:bg-slate-600/30">
               <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="fill-sky-500/20 stroke-sky-500" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path class="stroke-sky-500" d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"></path></svg>Light
             </li>
-            <li class="flex items-center py-1 px-2 cursor-pointer hover:bg-slate-50">
+            <li class="flex items-center py-1 px-2 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-600/30">
               <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 mr-2"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-transparent"></path><path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-slate-400 dark:fill-slate-500"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-slate-400 dark:fill-slate-500"></path></svg>Dark
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
     <main class="min-h-[calc(100dvh-64.8px)] flex justify-center">
@@ -75,8 +75,8 @@
           </div>
         </div>
         <div class="mt-8 font-primary">
-          <a class="inline-block rounded-lg py-2.5 px-[18px] border-[1.5px] border-slate-300 mr-4 hover:border-[1.5px] hover:border-sky-500/80 text-slate-700 text-base leading-6 tracking-wider" href="pages/login.html">Login</a>
-          <a class="inline-block rounded-lg py-2.5 px-[18px] bg-sky-500/80 shadow-md hover:shadow-sky-300 text-white  text-base leading-6 tracking-wider" href="pages/signup.html">Signup</a>
+          <a class="inline-block rounded-lg py-2.5 px-[18px] border-[1.5px] border-slate-300 mr-4 hover:border-[1.5px] hover:border-sky-500/80 focus:border-sky-500/80 focus:outline-none text-slate-700 text-base leading-6 tracking-wider" href="pages/login.html">Login</a>
+          <a class="inline-block rounded-lg py-2.5 px-[18px] bg-sky-500/80 shadow-md text-white  text-base leading-6 tracking-wider focus:outline-none focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-sky-500/80" href="pages/signup.html">Signup</a>
         </div>
       </div>
     </main>

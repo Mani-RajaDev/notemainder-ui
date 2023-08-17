@@ -3,6 +3,7 @@ module.exports = {
   content: ['**/*.{html,js}'],
   theme: {
     extend: {
+      darkMode: 'class',
       fontFamily: {
         "primary": "var(--font-primary)",
         "secondary": "var(--font-secondary)",
