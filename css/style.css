@@ -1488,18 +1488,9 @@ video {
   border-bottom-width: 2px;
 }
 
-.focus\:border-green-500:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
-}
-
 .focus\:border-sky-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
-}
-
-.focus\:border-sky-500\/80:focus{
-  border-color: rgb(14 165 233 / 0.8);
 }
 
 .focus\:bg-sky-300\/50:focus{
@@ -1524,32 +1515,8 @@ video {
   outline-width: 1px;
 }
 
-.focus\:outline-2:focus{
-  outline-width: 2px;
-}
-
 .focus\:outline-offset-2:focus{
   outline-offset: 2px;
-}
-
-.focus\:outline-green-500\/80:focus{
-  outline-color: rgb(34 197 94 / 0.8);
-}
-
-.focus\:outline-red-500:focus{
-  outline-color: #ef4444;
-}
-
-.focus\:outline-sky-400:focus{
-  outline-color: #38bdf8;
-}
-
-.focus\:outline-sky-500:focus{
-  outline-color: #0ea5e9;
-}
-
-.focus\:outline-sky-500\/80:focus{
-  outline-color: rgb(14 165 233 / 0.8);
 }
 
 .focus\:ring-1:focus{
@@ -1574,24 +1541,11 @@ video {
   --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
 }
 
-.active\:outline-none:active{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 .group:hover .group-hover\:fill-red-500{
   fill: #ef4444;
 }
 
 .group:hover .group-hover\:fill-sky-500{
-  fill: #0ea5e9;
-}
-
-.group:focus .group-focus\:fill-red-500{
-  fill: #ef4444;
-}
-
-.group:focus .group-focus\:fill-sky-500{
   fill: #0ea5e9;
 }
 
