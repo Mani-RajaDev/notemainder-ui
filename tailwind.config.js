@@ -11,9 +11,6 @@ module.exports = {
       animation: {
         "typing": "typing 3.5s steps(40, end), blink-caret .75s step-end infinite"
       },
-      backgroundImage: {
-        'settings-banner': "url(../images/settings_banner.png)",
-      },
       keyframes: {
         typing: {
           "0%": {width: "0px"},
