@@ -1247,6 +1247,10 @@ video {
   padding-left: 0.75rem;
 }
 
+.pl-7{
+  padding-left: 1.75rem;
+}
+
 .pr-2{
   padding-right: 0.5rem;
 }
@@ -1786,6 +1790,10 @@ video {
   .sm\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .sm\:pl-0{
+    padding-left: 0px;
   }
 
   .sm\:pl-6{
