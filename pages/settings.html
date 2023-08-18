@@ -9,45 +9,58 @@
 <body class="bg-white antialiased">
   <div class="font-primary w-11/12 sm:w-10/12 mx-auto max-w-7xl py-4">
 		<!-- Settings header -->
-		<div>
-			<!-- Banner -->
-			<div class="h-36 bg-settings-banner bg-cover bg-center bg-no-repeat">
-			</div>
+		<div class="mb-8">
 			<!-- Avatar and details -->
-			<div class="flex flex-col sm:flex-row gap-6 sm:items-center relative -top-16 px-4 sm:px-8">
-				<div class="w-24 h-24 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
+			<div class="flex flex-col lg:flex-row gap-6 lg:items-center relative px-4 lg:px-8">
+				<div class="w-24 h-24 lg:w-40 lg:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
 							<img src="../images/portfolio.jpg" alt="Your profile image" class="max-w-full h-auto">
 				</div>
-				<div class="sm:mt-12">
-					<p class="text-slate-900 font-semibold text-2xl leading-8 sm:text-3xl sm:leading-9">Olivia Rhye</p>
+				<div>
+					<p class="text-slate-900 font-semibold text-2xl leading-8 lg:text-3xl lg:leading-9">Olivia Rhye</p>
 					<p class="text-base text-slate-700">hello@olivia.com</p>
 				</div>
 			</div>
 		</div>
 		<!-- Form container -->
-		<div class="flex flex-col sm:flex-row gap-x-5 mt-5 px-4 relative -top-16">
+		<div class="flex flex-col gap-y-5 gap-x-8 lg:flex-row mt-5 px-4 lg:px-8">
 			<div>
 				<p class="text-sm font-semibold leading-5 text-slate-700">Personal info</p>
 				<p class="text-sm leading-5 text-slate-600">Update your photo and profile details</p>
 			</div>
 			<!-- Edit form -->
-			<div class="mt-5 rounded-xl border border-gray-200 shadow-sm">
-				<form action="/" method="post" class="py-5 px-4">
+			<div class="rounded-xl h-auto border lg:flex-1 border-gray-200 shadow-sm">
+				<form action="#" method="post" class="py-5 px-4">
 					<div class="mb-6">
 						<label for="name" class="block mb-1.5 text-sm font-medium leading-5 text-slate-700">Name</label>
-						<input type="text" value="Olivia Rhye" class="block text-slate-900 text-base leading-6 w-full outline-none bg-none bg-transparent rounded-lg border border-gray-300 shadow-sm py-2.5 px-3.5">
+						<input type="text" name="username" value="Olivia Rhye" class="block text-slate-900 text-base leading-6 w-full outline-none bg-none bg-transparent rounded-lg border border-gray-300 shadow-sm py-2.5 px-3.5">
 					</div>
 					<div class="mb-6">
 						<label for="name" class="block mb-1.5 text-sm font-medium leading-5 text-slate-700">Email</label>
-						<input type="email" value="hello@olivia.com" class="block text-slate-900 text-base leading-6 w-full outline-none bg-none bg-transparent rounded-lg border border-gray-300 shadow-sm py-2.5 px-3.5">
+						<input type="email" name="email" value="hello@olivia.com" class="block text-slate-900 text-base leading-6 w-full outline-none bg-none bg-transparent rounded-lg border border-gray-300 shadow-sm py-2.5 px-3.5">
 					</div>
-					<div>
+					<!-- Upload image field -->
+					<div class="mb-6">
+						<!-- Selected image -->
 						<div class="w-16 h-16 rounded-full overflow-hidden mb-5">
 							<img src="../images/portfolio.jpg" alt="Current profile image" class="max-w-full h-auto">
 						</div>
-						<div>
-
+						<!-- Custom file upload section -->
+						<div class="py-4 px-6 border border-gray-200 rounded-xl flex items-center justify-center">
+							<div class="w-10 h-10 rounded-lg border-gray-200 border">
+								<label for="photo" class="w-full h-full flex justify-center items-center cursor-pointer">
+									<div class="w-1/2 h-1/2">
+										<img src="../images/upload_image.png" alt="Upload Icon" class="max-w-full h-auto">
+									</div>
+								</label>
+								<input type="file" name="photo" accept="image/*" id="photo" class="invisible w-0 h-0">
+							</div>
+							<p class="ml-1 text-sm text-sky-500">Upload image</p>
 						</div>
+					</div>
+					<!-- CTA buttons -->
+					<div class="flex flex-wrap justify-end gap-3">
+						<button class="outline-none bg-none bg-transparent py-2.5 px-4 rounded-lg border shadow-sm border-gray-300">Cancel</button>
+						<button class="outline-none py-2.5 px-4 bg-sky-500 text-white rounded-lg border border-sky-500 shadow-sm ">Save changes</button>
 					</div>
 				</form>
 			</div>
