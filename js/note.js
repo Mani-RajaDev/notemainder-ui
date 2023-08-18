@@ -6,9 +6,18 @@ profileToggler.addEventListener('click', () => {
     profile.classList.toggle('hidden');
 })
 
+// New note form
 let newNote = document.getElementById('new__note');
-let noteForm = document.getElementById('note__form');
+let formContainer = document.getElementById('form__container');
 
 newNote.addEventListener('click', () => {
-    noteForm.classList.toggle('hidden');
+    formContainer.classList.toggle('hidden');
+})
+
+let backBtn = document.getElementById('back__btn');
+let noteForm = document.getElementById('note__form');
+
+backBtn.addEventListener('click', () => {
+    noteForm.reset();
+    formContainer.classList.toggle('hidden');
 })
